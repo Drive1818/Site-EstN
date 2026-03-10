@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<title>Estúdio Náutilus — Venda de Sites</title>
+
+<!-- Fonts -->
+
+</head>
+<body>+
+<header aria-label="Cabeçalho">
+  <div class="header-inner" style="padding: 0 0; "> <a class="brand" href="#top" aria-label="Voltar ao topo">
+    <div><img style="border: 1px solid green;border-radius: 50px;" src="img/Image -  at 17.jpeg" width="44" height="44" alt=""/></div>
+    <div>
+      <h1>Estúdio Náutilus</h1>
+      <p>Sites que vendem. Design premium e rápido.</p>
+    </div>
+    </a>
+    <nav aria-label="Navegação principal">
+      <div class="nav-row">
+        <div class="nav-links" aria-label="Links"> <a href="#produtos">Produtos</a> <a href="#como-funciona">Como funciona</a> <a href="#diferenciais">Diferenciais</a> <a href="#contato">Contato</a> </div>
+        <div class="header-actions" aria-label="Ações">
+          <button class="btn" id="btnLogin" type="button">Entrar</button>
+          <button class="icon-btn" id="btnCart" type="button" aria-label="Abrir carrinho">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6.5 7.5h15l-1.4 7.2a2 2 0 0 1-2 1.6H9.1a2 2 0 0 1-2-1.6L5.2 4.5H2.5" stroke="rgba(255,255,255,.95)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9.5 20a.8.8 0 1 0 0-1.6.8.8 0 0 0 0 1.6ZM17.5 20a.8.8 0 1 0 0-1.6.8.8 0 0 0 0 1.6Z" fill="rgba(255,255,255,.95)"/>
+          </svg>
+          <span class="badge" id="cartCount" aria-label="Quantidade de itens">0</span> </button>
+          <button class="icon-btn hamburger" id="btnHamburger" type="button" aria-label="Abrir menu">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 7h14M5 12h14M5 17h14" stroke="rgba(255,255,255,.95)" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
+  <div class="wrap"> <a href="#produtos" data-close-mobile>Produtos</a> <a href="#como-funciona" data-close-mobile>Como funciona</a> <a href="#diferenciais" data-close-mobile>Diferenciais</a> <a href="#contato" data-close-mobile>Contato</a> </div>
+</div>
+<main id="top">
+  <section class="search-area">
+    <div class="container">
+      <div class="search-shell reveal d1">
+        <div class="search-box" role="search" aria-label="Buscar itens do site">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true" style="opacity:.9">
+            <path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" stroke="rgba(255,255,255,.9)" stroke-width="1.7"/>
+            <path d="M16.5 16.5 21 21" stroke="rgba(255,255,255,.9)" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+          <input id="searchInput" type="search" placeholder="Buscar: 'landing', 'loja', 'portfolio', 'restaurante'..." aria-label="Campo de busca"/>
+          <button class="btn btn-primary" id="btnSearch" type="button">Buscar</button>
+        </div>
+        <div class="search-meta" id="searchMeta" aria-live="polite"> Dica: digite um termo e a página filtra e destaca os produtos. </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero" aria-label="Seção principal">
+    <div class="hero-inner container">
+      <div class="reveal d2">
+        <h2>*DigitalPro.<br>*Bem-vindo à WebShop.<br>
+          *Criação de Sites Profissionais.</h2>
+        <p> Escolha um modelo, faça login, adicione ao carrinho e finalize no checkout com Pix, boleto ou cartão.
+          Layout moderno, responsivo e pensado para performance.</p>
+        <div class="hero-cta"> <a class="btn btn-primary" href="#produtos">Ver modelos</a>
+          <button class="btn" type="button" id="btnOpenCheckoutFromHero">Ir para checkout</button>
+        </div>
+        <div class="hero-note"> <span class="pill">Entrega rápida</span> <span class="pill">SEO base + responsivo</span> <span class="pill">Suporte na publicação</span> </div>
+      </div>
+      <div class="hero-art reveal d3" aria-hidden="true">
+        <svg viewBox="0 0 420 440" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="rgba(255,255,255,.22)"/>
+              <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="rgba(34,197,94,.55)"/>
+              <stop offset="1" stop-color="rgba(96,165,250,.55)"/>
+            </linearGradient>
+            <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="14"/>
+            </filter>
+          </defs>
+          <rect x="24" y="32" width="372" height="168" rx="22" fill="rgba(0,0,0,.22)" stroke="rgba(255,255,255,.18)"/>
+          <rect x="44" y="56" width="160" height="18" rx="9" fill="rgba(255,255,255,.22)"/>
+          <rect x="44" y="86" width="260" height="10" rx="5" fill="rgba(255,255,255,.12)"/>
+          <rect x="44" y="106" width="220" height="10" rx="5" fill="rgba(255,255,255,.12)"/>
+          <rect x="44" y="140" width="120" height="34" rx="17" fill="url(#g2)"/>
+          <rect x="24" y="230" width="372" height="176" rx="22" fill="rgba(0,0,0,.18)" stroke="rgba(255,255,255,.18)"/>
+          <circle cx="82" cy="290" r="34" fill="url(#g2)" filter="url(#blur)" opacity=".75"/>
+          <rect x="132" y="264" width="220" height="14" rx="7" fill="rgba(255,255,255,.20)"/>
+          <rect x="132" y="288" width="190" height="10" rx="5" fill="rgba(255,255,255,.12)"/>
+          <rect x="132" y="308" width="160" height="10" rx="5" fill="rgba(255,255,255,.12)"/>
+          <rect x="132" y="340" width="92" height="30" rx="15" fill="rgba(255,255,255,.16)"/>
+          <rect x="230" y="340" width="122" height="30" rx="15" fill="url(#g2)"/>
+          <path d="M44 210 C110 180, 160 220, 220 200 C290 175, 330 215, 396 190" stroke="url(#g1)" stroke-width="2" fill="none" opacity=".85"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+  <section class="products" id="produtos" aria-label="Produtos">
+    <div class="container">
+      <div class="section-head io">
+		  <div>
+	      
+          <h3>😎*Você vai surfar literalmente na web com
+ nossos sites de modelos esxlusivos.*🏄</h3>
+          <p>Use a busca para filtrar. Clique em "Comprar" para adicionar ao carrinho. Você pode ajustar quantidades no carrinho e ir ao checkout.</p>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="grid" id="productsGrid"> 
+          <!--Img 1 modal-->
+          <article class="product io" data-name="Landing Page Pro" data-tags="landing startup saas conversão" data-price="799">
+            <div class="thumb" aria-hidden="true"> <img src="img/ScreenShot_20260305161004.png" alt="Landing Page Pro" class="gallery-item" onclick="openModal('modal1', 'Landing Page Pro')" width="390" height="200" /></div>
+            <div class="body">
+              <h4>Landing Page Pro</h4>
+              <p class="desc">Uma página enxuta para captação de leads. CTA forte, seções alternadas e foco em conversão.</p>
+              <div class="meta-row"> <span class="price">R$ <span class="pval">799</span></span> <span class="tag">Landing</span> </div>
+              <div class="actions">
+                <button class="btn-ghost" type="button" data-preview>Ver detalhes</button>
+                <button class="btn-buy" type="button" data-add>Comprar</button>
+              </div>
+            </div>
+          </article>
+          <!--Img 2 modal-->
+          <article class="product io" data-name="Site Institucional Premium" data-tags="institucional empresa serviços" data-price="1190">
+            <div class="thumb" aria-hidden="true"> <img src="img/ScreenShot_20260305173428.png"
+		alt="Site Institucional Premium" class="gallery-item" onclick="openModal('modal2', 'Site Institucional Premium')" width="390" height="200" /></div>
+            <div class="body">
+              <h4>Site Institucional Premium</h4>
+              <p class="desc">Ideal para empresas e prestadores de serviço. Estrutura clara, páginas essenciais e design refinado.</p>
+              <div class="meta-row"> <span class="price">R$ <span class="pval">1190</span></span> <span class="tag">Institucional</span> </div>
+              <div class="actions">
+                <button class="btn-ghost" type="button" data-preview>Ver detalhes</button>
+                <button class="btn-buy" type="button" data-add>Comprar</button>
+              </div>
+            </div>
+          </article>
+          <!--Img 3 modal-->
+          <article class="product io" data-name="Loja Compacta" data-tags="loja ecommerce produtos carrinho checkout" data-price="1890">
+            <div class="thumb" aria-hidden="true"> <img src="img/ScreenShot_20260305175214.png" alt="Loja Compacta" class="gallery-item" onclick="openModal('modal3', 'Loja Compacta')" width="100%" height="200"/></div>
+            <div class="body">
+              <h4>Loja Compacta</h4>
+              <p class="desc">Para vender poucos produtos com experiência fluida. Catálogo, carrinho e checkout prontos.</p>
+              <div class="meta-row"> <span class="price">R$ <span class="pval">1890</span></span> <span class="tag">E-commerce</span> </div>
+              <div class="actions">
+                <button class="btn-ghost" type="button" data-preview>Ver detalhes</button>
+                <button class="btn-buy" type="button" data-add>Comprar</button>
+              </div>
+            </div>
+          </article>
+          <!--Img 4 modal-->
+          <article class="product io" data-name="Portfólio Criativo" data-tags="portfolio designer fotógrafo criativo" data-price="990">
+            <div class="thumb" aria-hidden="true"> <img src="img/ScreenShot_20260305184027.png" alt="Portfólio Criativo" class="gallery-item" onclick="openModal('modal4', 'Portfólio Criativo')" width="390" height="200"/></div>
+            <div class="body">
+              <h4>Portfólio Criativo</h4>
+              <p class="desc">Para profissionais criativos. Seções com impacto tipográfico e área de projetos organizada.</p>
+              <div class="meta-row"> <span class="price">R$ <span class="pval">990</span></span> <span class="tag">Portfólio</span> </div>
+              <div class="actions">
+                <button class="btn-ghost" type="button" data-preview>Ver detalhes</button>
+                <button class="btn-buy" type="button" data-add>Comprar</button>
+              </div>
+            </div>
+          </article>
+          <!--Img 5 modal-->
+          <article class="product io" data-name="Restaurante & Delivery" data-tags="restaurante cardápio delivery reservas" data-price="1390">
+            <div class="thumb" aria-hidden="true"> <img src="img/ScreenShot_20260305190821.png" alt="Restaurante & Delivery" class="gallery-item" onclick="openModal('modal5', 'Restaurante & Delivery')" width="390" height="200"/></div>
+            <div class="body">
+              <h4>Restaurante & Delivery</h4>
+              <p class="desc">Destaque para cardápio, horários e contato. Pronto para receber pedidos e reservas.</p>
+              <div class="meta-row"> <span class="price">R$ <span class="pval">1390</span></span> <span class="tag">Food</span> </div>
+              <div class="actions">
+                <button class="btn-ghost" type="button" data-preview>Ver detalhes</button>
+                <button class="btn-buy" type="button" data-add>Comprar</button>
+              </div>
+            </div>
+          </article>
+          <!--Img 6 modal-->
+          <article class="product io" data-name="Blog & Conteúdo" data-tags="blog conteúdo seo artigos" data-price="1090">
+            <div class="thumb" aria-hidden="true"> <img src="img/ScreenShot_20260305231844.png" alt="Blog & Conteúdo" class="gallery-item" onclick="openModal('modal6', 'Blog & Conteúdo')" width="390" height="200"/></div>
+            <div class="body">
+              <h4>Blog & Conteúdo</h4>
+              <p class="desc">Estrutura editorial com leitura agradável. Ideal para SEO e publicação recorrente de artigos.</p>
+              <div class="meta-row"> <span class="price">R$ <span class="pval">1090</span></span> <span class="tag">Conteúdo</span> </div>
+              <div class="actions">
+                <button class="btn-ghost" type="button" data-preview>Ver detalhes</button>
+                <button class="btn-buy" type="button" data-add>Comprar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Img modal Inicio--> 
+  <!--Img 1 modal-->
+  <div id="modal1" class="modal"> <span class="close" onclick="closeModal('modal1')">&times;</span> <img src="img/ScreenShot_20260305161004.png"   alt="Landing Page Pro" class="modal-content" width="600" height="400">
+    <div class="caption"></div>
+  </div>
+  <!--Img 2 modal-->
+  <div id="modal2" class="modal"> <span class="close" onclick="closeModal('modal2')">&times;</span> <img src="img/ScreenShot_20260305173428.png" alt="Site Institucional Premium" class="modal-content" width="600" height="400">
+    <div class="caption"></div>
+  </div>
+  <!--Img 3 modal-->
+  <div id="modal3" class="modal"> <span class="close" onclick="closeModal('modal3')">&times;</span> <img src="img/ScreenShot_20260305175214.png" alt="Loja Compacta" class="modal-content" width="600" height="400">
+    <div class="caption"></div>
+  </div>
+  <!--Img 4 modal-->
+  <div id="modal4" class="modal"> <span class="close" onclick="closeModal('modal4')">&times;</span> <img src="img/ScreenShot_20260305184027.png" alt="Portfólio Criativo" class="modal-content" width="600" height="400">
+    <div class="caption"></div>
+  </div>
+  <!--Img 5 modal-->
+  <div id="modal5" class="modal"> <span class="close" onclick="closeModal('modal5')">&times;</span> <img src="img/ScreenShot_20260305190821.png" alt="Restaurante & Delivery" class="modal-content" width="600" height="400">
+    <div class="caption"></div>
+  </div>
+  <!--Img 6 modal-->
+  <div id="modal6" class="modal"> <span class="close" onclick="closeModal('modal6')">&times;</span> <img src="img/ScreenShot_20260305231844.png" alt="Blog & Conteúdo" class="modal-content" width="600" height="400">
+    <div class="caption"></div>
+  </div>
+  <section id="como-funciona" aria-label="Como funciona" style="padding: 0 0 54px;">
+    <div class="container">
+      <div class="grid" style="align-items: stretch;">
+        <div class="io" style="grid-column: span 7; padding: 18px; border-radius: var(--radius2); border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.05); backdrop-filter: blur(10px); box-shadow: 0 16px 50px rgba(0,0,0,.22);">
+          <h3 style="margin:0; font-family: Fraunces, serif; font-size: 26px;">Como funciona</h3>
+          <p style="margin:10px 0 0; color: rgba(255,255,255,.74); line-height:1.6; font-size: 14px;"> 1) Busque e escolha um modelo. 2) Adicione ao carrinho. 3) Revise e finalize no checkout.
+            Após o pagamento, você recebe instruções e fazemos a entrega/ajustes conforme o pacote escolhido. </p>
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+            <button class="btn btn-primary" type="button" id="btnOpenCartFromHow">Abrir carrinho</button>
+            <button class="btn" type="button" id="btnLoginFromHow">Fazer login</button>
+          </div>
+        </div>
+        <div class="io" id="diferenciais" style="grid-column: span 5; padding: 18px; border-radius: var(--radius2); border: 1px solid rgba(255,255,255,.14); background: linear-gradient(135deg, rgba(96,165,250,.12), rgba(34,197,94,.06)); backdrop-filter: blur(10px); box-shadow: 0 16px 50px rgba(0,0,0,.22);">
+          <h3 style="margin:0; font-family: Fraunces, serif; font-size: 26px;">Diferenciais</h3>
+          <ul style="margin: 10px 0 0; padding-left: 18px; color: rgba(255,255,255,.76); line-height: 1.75; font-size: 14px;">
+            <li>Design com tipografia forte e identidade.</li>
+            <li>Responsivo (mobile-first) e leve.</li>
+            <li>Checkout com Pix, boleto e cartão (simulado).</li>
+            <li>Busca que filtra e destaca produtos.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contato" aria-label="Contato" style="padding: 0 0 60px;">
+    <div class="container">
+      <div class="io" style="padding: 18px; border-radius: var(--radius2); border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.05); backdrop-filter: blur(10px);">
+        <h3 style="margin:0; font-family: Fraunces, serif; font-size: 26px;">Contato</h3>
+        <p style="margin:10px 0 0; color: rgba(255,255,255,.74); line-height:1.6; font-size: 14px;"> Quer um site sob medida (fora dos modelos)? Clique em "Entrar" para simular login e enviar pedido,
+          ou use o checkout para finalizar a compra. </p>
+      </div>
+    </div>
+  </section>
+  <footer aria-label="Rodapé">
+    <div class="container footer-inner">
+      <div>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div class="logo" aria-hidden="true" style="width:38px;height:38px;border-radius:14px;"></div>
+          <div> <strong style="font-family: Fraunces, serif; letter-spacing:.2px;">Estúdio Náutilus</strong>
+            <div class="fine">Venda de sites • UI/UX • Performance</div>
+          </div>
+        </div>
+        <p class="fine" style="margin-top:10px;"> Esta é uma demo front-end: carrinho/checkout funcionam no navegador (sem backend). Para produção,
+          conecte a um gateway de pagamento e um banco de dados. </p>
+      </div>
+      <div class="footer-links" aria-label="Links do rodapé"> <a href="#produtos">Produtos</a> <a href="#como-funciona">Como funciona</a> <a href="#top">Topo</a> </div>
+    </div>
+  </footer>
+</main>
+<div class="overlay" id="overlay" aria-hidden="true"></div>
+<aside class="drawer" id="cartDrawer" aria-label="Carrinho (aba lateral)">
+  <div class="drawer-head">
+    <div> <strong>Carrinho</strong>
+      <div style="color: rgba(255,255,255,.70); font-size: 12px; margin-top: 2px;"> Soma de produtos e valores • ajuste quantidades </div>
+    </div>
+    <button class="modal-close" id="btnCloseCart" type="button" aria-label="Fechar carrinho">✕</button>
+  </div>
+  <div class="drawer-body" id="cartItems"> </div>
+  <div class="drawer-foot">
+    <div class="totals"> <span>Total</span> <strong id="cartTotal">R$ 0</strong> </div>
+    <button class="btn btn-primary" id="btnCheckout" type="button">Ir para checkout</button>
+    <button class="btn" id="btnWhatsApp" type="button">Finalizar pelo WhatsApp</button>
+    <button class="btn" id="btnClearCart" type="button">Limpar carrinho</button>
+  </div>
+</aside>
+<dialog id="loginDialog" aria-label="Login">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-title"> <strong>Entrar</strong> <span>Pop-up para simular autenticação</span> </div>
+      <button class="modal-close" type="button" data-close-dialog="loginDialog" aria-label="Fechar">✕</button>
+    </div>
+    <div class="modal-body">
+      <form class="form" id="loginForm">
+        <div class="field full">
+          <label for="email">E-mail</label>
+          <input id="email" type="email" placeholder="seuemail@dominio.com" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="pass">Senha</label>
+          <input id="pass" type="password" placeholder="••••••••" autocomplete="current-password" required>
+        </div>
+        <div class="field">
+          <label for="company">Empresa (opcional)</label>
+          <input id="company" type="text" placeholder="Nome da empresa" autocomplete="organization">
+        </div>
+        <div class="field full" style="color: rgba(255,255,255,.70); font-size: 12px; line-height: 1.5;"> Ao entrar, você poderá prosseguir para o checkout. (Demonstração local — sem envio real.) </div>
+        <div class="modal-actions full">
+          <button class="btn" type="button" data-close-dialog="loginDialog">Cancelar</button>
+          <button class="btn btn-primary" type="submit">Entrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</dialog>
+<dialog id="checkoutDialog" aria-label="Checkout">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-title"> <strong>Checkout</strong> <span>Escolha Pix, boleto ou cartão e revise o total</span> </div>
+      <button class="modal-close" type="button" data-close-dialog="checkoutDialog" aria-label="Fechar">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="checkout-grid">
+        <div class="panel">
+          <h5>Condições de pagamento</h5>
+          <div class="pay-options" role="radiogroup" aria-label="Opções de pagamento">
+            <label class="pay">
+            <input type="radio" name="pay" value="pix" checked>
+            <div> <strong>Pix</strong> <span>Aprovação imediata. Desconto demo: 3% aplicado no total.</span> </div>
+            </label>
+            <label class="pay">
+            <input type="radio" name="pay" value="boleto">
+            <div> <strong>Boleto</strong> <span>Compensação em até 2 dias úteis. (Simulação)</span> </div>
+            </label>
+            <label class="pay">
+            <input type="radio" name="pay" value="card">
+            <div> <strong>Cartão de crédito</strong> <span>Até 6x sem juros (simulação). Coletamos apenas dados fictícios.</span> </div>
+            </label>
+          </div>
+          <div id="cardFields" style="margin-top:12px; display:none;">
+            <div class="form" style="grid-template-columns: 1fr 1fr;">
+              <div class="field full">
+                <label for="cardName">Nome no cartão</label>
+                <input id="cardName" type="text" placeholder="Nome completo">
+              </div>
+              <div class="field full">
+                <label for="cardNum">Número</label>
+                <input id="cardNum" type="text" inputmode="numeric" placeholder="0000 0000 0000 0000" maxlength="19">
+              </div>
+              <div class="field">
+                <label for="cardExp">Validade</label>
+                <input id="cardExp" type="text" placeholder="MM/AA" maxlength="5">
+              </div>
+              <div class="field">
+                <label for="cardCvv">CVV</label>
+                <input id="cardCvv" type="text" inputmode="numeric" placeholder="123" maxlength="4">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <h5>Resumo do pedido</h5>
+          <div class="summary" id="checkoutSummary"></div>
+          <div style="margin-top:12px; display:flex; align-items:center; justify-content:space-between; gap:10px;">
+            <div style="color: rgba(255,255,255,.70); font-size: 12px; line-height: 1.4;"> Total para checagem (com regras do pagamento). </div>
+            <div style="font-weight: 1000; font-size: 18px;" id="checkoutTotal">R$ 0</div>
+          </div>
+          <div class="modal-actions" style="margin-top:14px;">
+            <button class="btn" type="button" data-close-dialog="checkoutDialog">Voltar</button>
+            <button class="btn btn-primary" type="button" id="btnConfirmPay">Confirmar pagamento</button>
+          </div>
+        </div>
+      </div>
+      <div id="checkoutMsg" style="margin-top:12px; color: rgba(255,255,255,.75); font-size: 13px; line-height: 1.5;"></div>
+    </div>
+  </div>
+</dialog>
+<dialog id="detailsDialog" aria-label="Detalhes do produto">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-title"> <strong id="detailsTitle">Detalhes</strong> <span id="detailsSub">Descrição do item</span> </div>
+      <button class="modal-close" type="button" data-close-dialog="detailsDialog" aria-label="Fechar">✕</button>
+    </div>
+    <div class="modal-body" id="detailsBody"></div>
+  </div>
+</dialog>
+<script src="./js/script.js"></script>
+</body>
+</html>
